@@ -13,7 +13,7 @@ use App\Http\Controllers\MainController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/about',[MainController::class,'about'])->name('about');
-Route::get('/news',[MainController::class,'news'])->name('news');
-Route::get('/{slug?}',[MainController::class,'main']);
-Route::get('/{city}/{section}',[MainController::class,'section'])->whereIn('section',['about','news']);
+Route::get('/about', [MainController::class, 'about'])->name('about');
+Route::get('/news', [MainController::class, 'news'])->name('news');
+Route::get('/{slug?}', [MainController::class, 'main']);
+Route::get('/{city}/{section}', [MainController::class, 'section'])->whereIn('section', ['about', 'news']);

@@ -18,5 +18,5 @@ use App\Http\Controllers\MainController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::post('/remove',[MainController::class,'removeCity']);
-Route::post('/add',[MainController::class,'addCity']);
+Route::post('/remove', [MainController::class, 'removeCity']);
+Route::post('/add', [MainController::class, 'addCity']);
